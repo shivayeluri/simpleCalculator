@@ -1,9 +1,11 @@
+import logic.*;
+
 public class ScientificCalculator {
     public static void main(String[] args) {
-        int num = 1000;
-        int mul = 2;
-        int value = num*mul;
-        System.out.println("value : "+value+1);
-        System.out.println("newvalue : "+mul*mul);
+       new Addition().addingNumbers(args);
+       new Subtraction().subtractingNumbers(args);
+       new Multiplication().multiplyingNumbers(args);
+       new Modulus().Modulus(args);
+       new Divison().divideNumbers(args);
     }
 }
