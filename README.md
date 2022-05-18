@@ -1,1 +1,1 @@
-# sciCalculator
+# simpleCalculator
