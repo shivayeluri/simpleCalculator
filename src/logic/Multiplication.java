@@ -2,20 +2,14 @@ package logic;
 
 public class Multiplication {
     public void multiplyingNumbers(String[] inputNumbers){
-        float totalSum =1f;
-        boolean flag = true;
         try {
-            for (String num : inputNumbers) {
-                totalSum = Float.parseFloat(String.valueOf(num)) * totalSum;
-            }
-        }catch (Exception e) {
-            System.out.println("non int-val");
-            flag = false;
+            System.out.println(Integer.parseInt(inputNumbers[0]) * Integer.parseInt(inputNumbers[1]));
+        }catch ( NumberFormatException e) {
+            System.out.println("Not a number");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid number of inputs");
+        }catch (Exception e){
+            System.out.println(e);
         }
-
-        if (flag){
-            System.out.println(totalSum);
-        }
-
     }
 }

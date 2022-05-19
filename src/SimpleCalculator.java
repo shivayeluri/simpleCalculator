@@ -1,4 +1,3 @@
-import day2tasks.*;
 import logic.*;
 
 public class SimpleCalculator {
@@ -7,8 +6,6 @@ public class SimpleCalculator {
        new Subtraction().subtractingNumbers(args);
        new Multiplication().multiplyingNumbers(args);
        new Modulus().Modulus(args);
-       new Divison().divideNumbers(args);
-
+       new Division().divideNumbers(args);
     }
-
 }
