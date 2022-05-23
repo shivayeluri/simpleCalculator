@@ -1,9 +1,9 @@
 package logic;
 
-public class Modulus {
-    public void Modulus(String[] inputNumbers){
+public class Division {
+    public void divideNumbers(String[] inputNumbers){
         try {
-            System.out.println(Integer.parseInt(inputNumbers[0]) % Integer.parseInt(inputNumbers[1]));
+            System.out.println((float) Integer.parseInt(inputNumbers[0]) / Integer.parseInt(inputNumbers[1]));
         }catch ( NumberFormatException e) {
             System.out.println("Not a number");
         }catch (ArrayIndexOutOfBoundsException e){
